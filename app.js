@@ -22,7 +22,7 @@ mongoose
 
 app.use(bodyParser.json());//To allow To parse requested body from frontend
 app.use(bodyParser.urlencoded({extended:false}));
-app.use('/middleware/images',express.static('middleware/images')); //alllow To get stored img in server
+
 app.use(express.json());
 
 
@@ -46,8 +46,7 @@ app.use((req, res, next) => {
  })
 
 
-//   app.use("/api",AuthRouter);//login Registor Routes
-//   app.use("/api/master",ProductMasterRouter);//Product MAster Routes
-//   app.use("/api/codes",ProductCodesRouter);//Product Codes Routes
+
+
 
   module.exports = app;
